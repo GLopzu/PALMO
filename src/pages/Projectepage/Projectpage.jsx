@@ -1,8 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom'; // Importa Link desde react-router-dom
 import projects from '../../const/projectCard'; // Importa los datos de los proyectos
 import allTags from '../../const/allTags'; // Importa todos los tags disponibles
 
-export function ProjectSearchPage() {
+export default function ProjectSearchPage() {
   const [searchTerm, setSearchTerm] = useState(''); 
   const [filteredProjects, setFilteredProjects] = useState([]); // Estado para almacenar los proyectos filtrados
   const [loadedProjectsCount, setLoadedProjectsCount] = useState(4); // Estado para contar los proyectos cargados
@@ -94,7 +95,10 @@ export function ProjectSearchPage() {
         {filteredProjects.slice(0, loadedProjectsCount).map((project, index) => (
           <li key={project.id}>
             <h2>{project.title}</h2>
-            <img src={project.thumbnail} alt={`Thumbnail for ${project.title}`} />
+            {/* Enlace a la vista de detalle del proyecto */}
+            <Link to={`/project/${project.id}`}>
+              <img src={project.thumbnail} alt={`Thumbnail for ${project.title}`} />
+            </Link>
             <p>{project.description}</p>
             <div>
               <strong>Tags:</strong> {project.tags.map((tag, index) => (
