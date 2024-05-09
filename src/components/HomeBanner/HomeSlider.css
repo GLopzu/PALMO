@@ -1,0 +1,29 @@
+.home-slider-cont{
+    height: 100vh;
+    width: 100vw;
+    gap: 216px;
+    background-color: var(--main-dark-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-picture{
+    width: 800px;
+}
+
+.right-button{
+    transform: rotate(180deg);
+}
+
+.project-caption{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.slider-project-text{
+    color: white;
+}
+

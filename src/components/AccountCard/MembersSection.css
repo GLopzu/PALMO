@@ -1,0 +1,8 @@
+.member-section-cont{
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 50px;
+    column-gap: 150px;
+    margin: 60px 0;
+}

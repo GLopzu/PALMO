@@ -1,0 +1,32 @@
+h1{
+    font-family: Beni;
+    font-size: 268.16px !important;
+    margin: -76px !important;
+}
+
+.banner-main-cont{
+    width: max-content;
+    height: 100vh;
+    max-width: 100vw;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    gap: 41px;
+    box-sizing: border-box;
+    margin: 0 100px;
+}
+
+p{
+    font-size: 17px;
+}
+
+.text-wrap{
+    columns: 2;
+    width: 994px;}
+
+.banner-img{
+    position: absolute;
+    top: 36px;
+    right: 81px;
+    width: 450px;
+}

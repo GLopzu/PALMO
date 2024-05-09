@@ -1,12 +1,115 @@
-.hero-img{
-  background-image: url('https://forms.soundestlink.com/image/form/popup/60672fa3bf911515b9b9415a');
-  background-size: cover;
-  background-position-y: center;
-  height: 40vh;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+button {
+    font-family: "Montserrat",
+        sans-serif;
 }
 
-@media (min-width: 680px){
-  .hero-img{
-    height: 68vh;
-  }
+.projectFound {
+    display: flex;
+}
+
+.projectInfo {
+    border-bottom: 1px solid black;
+    width: 45%;
+    padding: 50px;
+}
+
+.infoContainer {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+
+}
+
+.tags {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+
+}
+
+.tags button {
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: white;
+    border-radius: 15px;
+    background-color: black;
+    border: none;
+    height: 3.2rem;
+    width: 8.5rem;
+
+}
+
+.projectTitle {
+    width: 80%;
+    font-family: "Inter", sans-serif;
+    font-size: 1.8rem;
+}
+
+.projectDescription {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.viewProjectBtn button {
+    font-family: "Montserrat",
+        sans-serif;
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: black;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: white;
+    height: 2.8rem;
+    width: 10rem;
+    margin-bottom: 20px;
+}
+
+.viewProjectBtn button:hover {
+    cursor: pointer;
+}
+
+
+.members {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.projectImg {
+
+    width: 55%;
+}
+
+.projectImg img {
+    width: 100%;
+    height: 100%;
+
+}
+
+@media (min-width: 680px) and (max-width:950px) {
+    .projectInfo {
+        padding: 20px;
+        width: 50%;
+    }
+
+    .projectImg {
+        width: 50%;
+    }
+
+    .tags strong {
+        display: none;
+    }
+
+    .projectTitle {
+        font-size: 1rem;
+    }
+
+    .projectDescription {
+        font-size: 1rem;
+    }
 }
