@@ -1,0 +1,42 @@
+.carousel {
+    padding: 50px;
+}
+
+.carouselContent {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+}
+
+.carouselTitle {
+    font-size: 1.5rem;
+}
+
+.carouselImages {
+    display: flex;
+    justify-content: space-between;
+}
+
+.carouselImg {
+    width: 23%;
+    height: 12rem;
+    border-right: 10px solid black;
+    border-bottom: 10px solid black;
+}
+
+.carouselImg img {
+    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (min-width: 680px) and (max-width:950px) {
+    .carouselImg {
+        height: 8rem;
+    }
+}

@@ -1,0 +1,317 @@
+body {
+
+    background: #EEE5E0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.containers {
+    margin: auto;
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+}
+
+
+
+.searchInput input {
+    margin-top: 45px;
+    border: 1px gray solid;
+    background-color: white;
+    color: black;
+    max-inline-size: -webkit-fill-available;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 1rem;
+    height: 3rem;
+}
+
+
+.tagsNav {
+    margin: 30px 0 30px 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+
+}
+
+.navButtons {
+    display: flex;
+    gap: 1rem;
+}
+
+.tagsNav button {
+    transition: 0.5s;
+    font-family: "Montserrat",
+        sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: white;
+    border-radius: 20px;
+    background-color: black;
+    border: none;
+    height: 3.2rem;
+    width: 8.5rem;
+}
+
+
+
+.tagsNav button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+
+.items {
+    width: 98%;
+    padding: 0;
+    margin: 0;
+}
+
+.item {
+    position: relative;
+    left: 2%;
+    background-color: black;
+    box-shadow: -7px -7px 21px -2px rgba(0, 0, 0, 0.09);
+    border-bottom: 5px solid black;
+    list-style-type: none;
+    display: flex;
+    margin-bottom: 50px;
+    height: auto;
+}
+
+
+.itemImg {
+    position: relative;
+    left: -0.5%;
+    width: 50%
+}
+
+.itemImg img {
+    height: 100%;
+    width: 100%;
+}
+
+.itemInfo {
+    gap: 10PX;
+    position: relative;
+    left: -0.5%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid;
+    width: 50%;
+    background-color: white;
+}
+
+.itemTitle {
+
+    width: 70%;
+    font-size: 1.6rem;
+}
+
+.itemTitle h2 {
+    margin: 0;
+}
+
+.itemDescription {
+    font-size: 1rem;
+    width: 85%;
+    font-weight: normal;
+
+}
+
+.itemDescription p {
+    margin: 0;
+}
+
+.itemButtons {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+}
+
+.itemButtons strong {
+    width: 10%;
+}
+
+.buttonsDiv {
+    display: flex;
+    width: 90%;
+    gap: 30px;
+}
+
+.buttonsDiv button {
+    font-family: "Montserrat",
+        sans-serif;
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: white;
+    border-radius: 15px;
+    background-color: black;
+    border: none;
+    height: 2.8rem;
+    width: 8rem;
+}
+
+@media (min-width:1920px) {
+    .searchInput input {
+        height: 3rem;
+    }
+
+    .tagsNav button {
+        height: 3.5rem;
+        width: 9rem;
+    }
+
+    .item {
+        margin-bottom: 100px;
+    }
+
+    .itemInfo {
+        padding: 30px;
+    }
+
+    .itemTitle {
+        font-size: 1.7rem;
+    }
+
+    .itemDescription {
+        font-size: 1.3rem;
+    }
+
+    .itemButtons button {
+        border-radius: 20px;
+        height: 3.5rem;
+        width: 9rem;
+    }
+
+    .tagsNav {
+        margin: 50px 0 50px 0;
+    }
+}
+
+@media(min-width:1440px) {
+    .tagsNav .buttonsDiv {
+        font-size: 1rem;
+        height: 3.5rem;
+        width: 10rem;
+    }
+
+    .itemTitle {
+        font-size: 1.8rem;
+    }
+
+    .itemButtons button {
+        font-size: 1rem;
+        height: 3.5rem;
+        width: 10rem;
+    }
+
+    .itemDescription {
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-width: 680px) and (max-width:950px) {
+    .tagsNav button {
+        height: 3rem;
+        width: 6rem;
+    }
+
+    .itemTitle {
+        font-size: 1.2rem;
+        width: 100%;
+    }
+
+    .itemDescription {
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .buttonsDiv {
+
+        gap: 10px;
+    }
+
+    .buttonsDiv button {
+        height: 2.5rem;
+        width: 6rem;
+
+    }
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+    .searchInput input {
+        font-size: 1rem;
+        padding-left: 5px;
+        height: 3rem;
+    }
+
+    .tagsNav {
+        gap: 10px;
+        flex-wrap: wrap;
+        margin: 15px 0 15px 0;
+    }
+
+
+    .tagsNav button {
+        height: 5.7rem;
+        width: 13rem;
+        font-size: 1.6rem;
+    }
+
+    .tagsNav button:hover {
+        transform: none;
+    }
+
+    .item {
+        margin-bottom: 30px;
+    }
+
+    .itemInfo {
+        padding: 5px;
+    }
+
+
+    .itemTitle {
+        font-size: 0.9rem;
+        width: 100%;
+    }
+
+    .itemDescription {
+        font-size: 1.3rem;
+        width: 100%;
+    }
+
+
+    .buttonsDiv {
+        width: 100%;
+        gap: 4px;
+    }
+
+    .buttonsDiv button {
+        font-size: 0.7rem;
+        width: 6rem;
+        height: 2.5rem;
+    }
+
+    .itemTitle {
+        font-size: 1rem;
+    }
+
+    .itemButtons strong {
+        display: none;
+        font-size: 0.8rem;
+    }
+}

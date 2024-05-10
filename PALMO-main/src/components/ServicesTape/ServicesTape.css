@@ -1,0 +1,22 @@
+h2{
+    font-family: Beni;
+    font-size: 44px;
+    flex-wrap: nowrap;
+    margin: 0;
+}
+
+.main-tape-cont{
+    position: absolute;
+    bottom: 10px;
+    transform: rotate(-1deg);
+}
+
+.tape-cont{
+    display: flex;
+    width: fit-content;
+    gap: 10px;
+    flex-wrap: nowrap;
+    background-color: #D9D9D9;
+    border: solid 1px var(--main-dark-color);
+}
+
